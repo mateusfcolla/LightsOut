@@ -1,0 +1,23 @@
+:root{
+  --light-off: rgb(204, 204, 204);
+  --light-on: rgb(255, 255, 255);
+  --light-on-border: rgb(204, 204, 204);
+}
+
+.Cell {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background-color: var(--light-off);
+  box-sizing: border-box;
+  border: 1px solid var(--light-off);
+}
+
+.Cell-lit {
+  background-color: var(--light-on);
+  box-shadow: 0px 0px 5px var(--light-on);
+  border-color: var(--light-on-border);
+}
